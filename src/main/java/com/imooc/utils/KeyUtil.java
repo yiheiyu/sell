@@ -15,4 +15,13 @@ public class KeyUtil {
         Integer number = random.nextInt(900000) + 100000;
         return System.currentTimeMillis() + String.valueOf(number);
     }
+
+    /**
+     * 生成唯一主键
+     * 格式：随机数
+     * @return
+     */
+    public static synchronized Integer genUniqueKeyNumber() {
+        return new Random().nextInt(900000) + 100000;
+    }
 }

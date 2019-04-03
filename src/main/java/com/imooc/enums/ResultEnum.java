@@ -25,6 +25,12 @@ public enum ResultEnum {
     ORDER_FINISH_SUCCESS(22, "订单完结成功"),
     PRODUCT_STATUS_ERROR(23, "商品状态不正确"),
     PRODUCT_STATUS_SUCCESS(24, "商品状态更新成功"),
+
+
+    LOGIN_SUCCESS(100, "登陆成功"),
+    LOGOUT_SUCCESS(101,"退出成功"),
+    LOGIN_ERROR(102,"登陆失败"),
+
     ;
 
 

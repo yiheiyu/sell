@@ -16,9 +16,15 @@ server:
     context-path: /sell
 
 wechat:
-  mpAppId: wx0743b1c018ce64b7
-  mpAppSecret: e3f9fee6ac1cdb9e74b1bd17cfcf95bc
+  mpAppId:
+  mpAppSecret:
+  openAppId:
+  openAppSecret:
   mchId:
   mchKey:
   keyPath:
   notifyUrl: http://sellceshi.natapp1.cc/sell/pay/notify
+
+
+project-url:
+  sell: /

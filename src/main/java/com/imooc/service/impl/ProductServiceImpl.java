@@ -24,7 +24,14 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductInfo findOne(String productId) {
-        return repository.getOne(productId);
+        ProductInfo productInfo = new ProductInfo();
+        try {
+            productInfo = repository.getOne(productId);
+        } catch (Exception e) {
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+        return productInfo;
+
     }
 
     @Override
