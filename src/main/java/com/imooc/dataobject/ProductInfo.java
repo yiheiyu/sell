@@ -29,7 +29,7 @@ public class ProductInfo {
   private Integer productStock;
   private String productDescription;
   private String productIcon;
-  private Integer productStatus;
+  private Integer productStatus = ProductStatusEnum.UP.getCode();
   private Integer categoryType;
   @JsonSerialize(using = Date2LongSerializer.class)
   private Date createTime;
@@ -40,5 +40,6 @@ public class ProductInfo {
   public ProductStatusEnum getProductStatusEnum() {
     return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
   }
+
 
 }

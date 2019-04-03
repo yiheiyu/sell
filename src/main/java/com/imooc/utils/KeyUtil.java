@@ -6,7 +6,7 @@ public class KeyUtil {
 
 
     /**
-     * 生成唯一的逐渐
+     * 生成唯一的主键ID
      * 格式：时间+随机数
      * @return
      */
