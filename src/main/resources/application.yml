@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.160.154.67/sell?characterEncoding=utf-8&useSSL=false
+#    url: jdbc:mysql://192.168.1.102/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+    open-in-view: true
+  jackson:
+    default-property-inclusion: non_null
+    joda-date-time-format:
+server:
+  servlet:
+    context-path: /sell
+
+wechat:
+  mpAppId: wx0743b1c018ce64b7
+  mpAppSecret: e3f9fee6ac1cdb9e74b1bd17cfcf95bc
+  mchId:
+  mchKey:
+  keyPath:
+  notifyUrl: http://sellceshi.natapp1.cc/sell/pay/notify
